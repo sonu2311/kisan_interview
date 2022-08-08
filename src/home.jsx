@@ -10,14 +10,14 @@ function Form(){
     <>
       <div className='form_card'>
         <div className='submenu_dropdown_card'>
-          <h3 style={{textAlign:"center", fontSize:"20px", color:"#333", letterSpacing:"1px"}}>Submenu</h3> 
+          <div style={{textAlign:"center", fontSize:"20px", fontWeight:"600", color:"#333", letterSpacing:"1px", padding:"10px 1px"}}>Submenu</div> 
           <div className='submenudropdown'>Home</div>
           <div className='submenudropdown'>Examles</div>
           <div className='submenudropdown'>Contact</div>
           <div className='submenudropdown'>About</div>
         </div>
         <div className='information_card'>
-          <div style={{backgroundColor:"#eae7e8", padding:"35px 1px"}}>
+          <div style={{backgroundColor:"#eae7e8", padding:"15px 1px"}}>
             <div className='hsplit ' style={{padding:"4px 30px"}}>
               <div className='person_info_left'>Name</div>
               <div className='person_info_right'>Nomen Nesico</div>
@@ -32,7 +32,7 @@ function Form(){
             </div>
           </div>
           <div className='massage_card' style={{}}>
-            <div style={{textAlign:"center", fontSize:"20px", fontWeight:"600", color:"#333", letterSpacing:"1px", padding:"20px 1px"}}>
+            <div style={{textAlign:"center", fontSize:"20px", fontWeight:"600", color:"#333", letterSpacing:"1px", padding:"10px 1px"}}>
               Send me a massage
             </div>
             <div>
@@ -53,13 +53,23 @@ function Form(){
                 </div>
               </div>
             </div>
-            <div>
-              <button>fghfhg</button>
+            <div style={{textAlign:"center", padding:"15px 35px"}} >
+              <button className='sendbutton'>Send</button>
+            </div>     
+          </div>
+          <div>
+            <div style={{textAlign:"center", fontSize:"20px", fontWeight:"600", color:"#333", letterSpacing:"1px", padding:"20px 1px",backgroundColor:"#eae7e8"}}>
+              Or meet me at the office
             </div>
+            <div><img src="images/image6.jpg" style={{width:"100%", height:"50%"}}/></div>
             
-        </div> 
-        </div>
-        
+            <div className='location'>
+              <div style={{width:"150px", marginLeft:"35px"}}>
+                ONE MIDTOWN 11 Hio Shing Rd Tsuen Wan
+              </div>
+            </div>
+          </div> 
+        </div>   
       </div>
 
     </>
@@ -87,8 +97,7 @@ function Home(){
                <Form/> 
               </div>
             </div>
-            <div className="
-             subtitle"> &nbsp;&nbsp;Related Articles&nbsp;&nbsp;</div>
+            <div className="line_through subtitle"> &nbsp;&nbsp;Related Articles&nbsp;&nbsp;</div>
             <div className='hsplit'>  
               {l.map ((x)=>(
                 <div className=" col-lg-3 col-md-4 col-sm-6 col-xs-12" >

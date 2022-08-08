@@ -77,7 +77,7 @@ body {
 }
 
 .submenudropdown{
-   padding: 12px 30px;
+   padding: 8px 30px;
    color:#00dfcf; 
    font-size: 18px;
  }
@@ -219,7 +219,7 @@ color:#006666;
   /* box-shadow: 1px 1px 2px #888888; */
   background-color: #fff;
   font-size: 25px;
-  margin: 5px 35px;
+  margin: 1px 35px;
 }
 
 .form_card{
@@ -235,9 +235,8 @@ color:#006666;
   /* margin: 25px 35px; */
   margin-left: 35px;
   margin-right: 35px;
-  margin-top: 25px;
-  /* padding:10px 1px; */
-  /* background-color:#eae7e8 */
+  margin-top: 20px;
+
 }
 
 .person_info_left{
@@ -257,6 +256,15 @@ color:#006666;
 .massage_card{
   background-color: #d5d3d2;
   
+}
+.location{
+  text-align:center;
+  font-size:15px; color:#333;
+  letter-spacing:1px;
+  margin-top:-5px; 
+  padding:10px 1px;
+  background-color:#eae7e8;
+  line-height:25px
 }
 
 
@@ -311,4 +319,30 @@ color:#006666;
 .subtitle{
   font-size: 22px;
   font-weight: 600;
+}
+
+.sendbutton{
+  background-color:#00c4b8;
+  /* border-color: #2e6da4; */
+  width:100%; 
+  color:#fff;
+  height: 50px;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 8px 10px;
+  font-size: 18px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  outline: none;
+}
+.sendbutton:hover{
+  box-shadow: 2px 3px 5px #bbb;
 }
