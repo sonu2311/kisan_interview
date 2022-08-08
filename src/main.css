@@ -1,6 +1,7 @@
 body {
   font-family: roboto;
 }
+
 .top_box {
   border: solid #ccc 1px;
   padding:  10px;
@@ -102,20 +103,23 @@ color:#006666;
 }
 
 .below_div_of_header{
-  padding:15px 50px;
+  /*padding:15px 50px;*/
   text-align: left;
   background-color: #7a98a1;
-  margin-top: -10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color:#fff;
 }
 .inside_div_of_below_div{
-  /* padding:1px 5px; */
-  line-height: 20px;
+   /*padding:1px 5px; */
+  /*line-height: 20px;*/
   font-size: 18px;
   word-spacing: 2px;;
 }
-.main_div{
-  padding:1px 50px;
+.main_div {
+  /*padding:1px 200px;*/
+  margin: auto;
+  max-width: 90%;
   /* border:solid blue 1px; */
 }
 .first_paragraph{
@@ -177,7 +181,6 @@ color:#006666;
 
 .repeat_card{
   color: #333; 
-  margin:25px; 
   border-Radius: 4px; padding: 20px; 
   box-shadow: 2px 2px 5px #888888; 
   background-color: #fff;
@@ -219,12 +222,14 @@ color:#006666;
   /* box-shadow: 1px 1px 2px #888888; */
   background-color: #fff;
   font-size: 25px;
-  margin: 1px 35px;
+  /*margin: 1px 20px;*/
 }
 
 .form_card{
   color: #666; 
   margin: 15px 1px;
+  margin-left: 35px;
+  margin-right: 20px;
 }
 
 .information_card{
@@ -232,11 +237,7 @@ color:#006666;
   border-radius: 4px;
   background-color: #fff;
   font-size: 25px;
-  /* margin: 25px 35px; */
-  margin-left: 35px;
-  margin-right: 35px;
   margin-top: 20px;
-
 }
 
 .person_info_left{
@@ -324,7 +325,7 @@ color:#006666;
 .sendbutton{
   background-color:#00c4b8;
   /* border-color: #2e6da4; */
-  width:100%; 
+  width:100%;
   color:#fff;
   height: 50px;
   margin-bottom: 0;
@@ -343,6 +344,29 @@ color:#006666;
   border-radius: 4px;
   outline: none;
 }
+
 .sendbutton:hover{
   box-shadow: 2px 3px 5px #bbb;
+}
+
+.mlr5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.m20 {
+  margin: 20px;
+}
+
+.bbox {
+  box-sizing: border-box;
+}
+
+.bred {
+  border:  solid red 1px;
+  box-sizing: border-box;
 }

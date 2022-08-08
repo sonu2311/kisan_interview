@@ -84,23 +84,32 @@ function Home(){
         <>
           <Header/>
           <div className='below_div_of_header'>
-            <div className='inside_div_of_below_div'>Duis mollis, est non commodo luctus,</div>
-            <div className='inside_div_of_below_div'>nisi erat prottitor ligula,</div>
-            <div className='inside_div_of_below_div'>eget lacinia odio sem nec elit.</div>  
+            <div className="main_div" >
+              <div className="m20" >
+                <div className='inside_div_of_below_div'>Duis mollis, est non commodo luctus,</div>
+                <div className='inside_div_of_below_div'>nisi erat prottitor ligula,</div>
+                <div className='inside_div_of_below_div'>eget lacinia odio sem nec elit.</div>  
+              </div>
+            </div>
           </div>
           <div className='main_div'>
             <div className='hsplit'>
-              <div className=" col-lg-8 col-md-6 col-sm-12 col-xs-12" > 
+              <div className="col-lg-8 col-md-7 col-sm-12 col-xs-12" > 
                 <Content/>
               </div> 
-              <div className='mid_panel col-lg-4 col-md-6 col-sm-12 col-xs-12'>
+              <div className='col-lg-4 col-md-5 col-sm-12 col-xs-12'>
                <Form/> 
               </div>
             </div>
-            <div className="line_through subtitle"> &nbsp;&nbsp;Related Articles&nbsp;&nbsp;</div>
+            <div className="m20" >
+              <div className="line_through subtitle">
+                  &nbsp;&nbsp;Related Articles&nbsp;&nbsp;
+              </div>
+            </div>
+            
             <div className='hsplit'>  
               {l.map ((x)=>(
-                <div className=" col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" >
                 <RepeatCard/>
               </div>
               ))}

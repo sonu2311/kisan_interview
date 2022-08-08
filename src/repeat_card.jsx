@@ -5,9 +5,7 @@ import {Header} from './header';
  
 export function RepeatCard(){
   return (
-    <>
-      
-      <div className='repeat_card'>
+    <div className='repeat_card m20'>
       <div className="">
         <img style={{width:"100%"}} src="images/image6.jpg"/>
       </div>
@@ -18,7 +16,6 @@ export function RepeatCard(){
         </div>
       </div>
 
-      </div>
-    </>
+    </div>
   )
 }

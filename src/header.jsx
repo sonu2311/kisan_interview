@@ -1,31 +1,8 @@
 import './library.css';
 import React from 'react';
 
-export function Header2() {
-  return (
-    <div className="hsplit" >
-      <div>
-        <a href="#/example1">
-          <div className="link_box" >Example1</div>
-        </a>
-      </div>
-      <div>
-        <a href="#/example2">
-          <div className="link_box" >Example2</div>
-        </a>
-      </div>
-      <div>
-        <a href="#/example3">
-          <div className="link_box" >Example3</div>
-        </a>
-      </div>
-    </div>
-  );
-}
-
 
 export function Header() {
-  // const isLogin = ("login_key" in session && "id" in session.login_key && session.login_key.id != null)
   const profile_name="sonu"
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
@@ -33,10 +10,6 @@ export function Header() {
   const menuOpenClose = function(){
     setIsMenuOpen(!isMenuOpen)
     console.log("isMenuOpen===", isMenuOpen)
-  }
-
-  const logout =function(){
-    window.location.href = "#/login"
   }
 
   return (
@@ -104,7 +77,7 @@ export function Header() {
             </div>
         </div>
       </div>
-      <div style={{height: '67px'}} />
+      <div style={{height: '57px'}} />
     </>
 
   )
