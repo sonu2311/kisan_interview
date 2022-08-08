@@ -3,11 +3,11 @@ import './main.css';
 import './library.css';
 import {Header} from './header';
  
-export function RepeatCard(){
+export function RepeatCard({image}){
   return (
     <div className='repeat_card m20'>
-      <div className="">
-        <img style={{width:"100%"}} src="images/image6.jpg"/>
+      <div className="" >
+        <img style={{width:"100%"}} src={image}/>
       </div>
       <div>
         <div className="colorful_heading_in_repeat">Porta Parturient Fermentum Euismod</div>

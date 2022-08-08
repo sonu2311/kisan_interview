@@ -10,7 +10,7 @@ export function MoreInSeries() {
       <div className="line_through subtitle"> &nbsp;&nbsp;More in this series&nbsp;&nbsp;</div>
       <div className="hsplit" style={{marginTop:"25px"}}>
         <div className="img_in_side_content_card_div">
-          <img style={{width:"100%"}} src="images/image6.jpg"/>
+          <img style={{width:"100%"}} src="/images/more_in_series1.png"/>
         </div>
         <div className="side_content_card">
           <div className="colorful_heading">Porta Parturient Fermentum Euismod</div>
@@ -22,7 +22,7 @@ export function MoreInSeries() {
 
       <div className="hsplit" style={{marginTop:"25px"}}>
         <div className="img_in_side_content_card_div">
-          <img style={{width:"100%"}} src="images/image6.jpg"/>
+          <img style={{width:"100%"}} src="images/more_in_series2.png"/>
         </div>
         <div className="side_content_card">
           <div className="colorful_heading">Porta Parturient Fermentum Euismod</div>

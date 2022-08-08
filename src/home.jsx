@@ -6,6 +6,12 @@ import { Content } from './content';
 import { RepeatCard } from './repeat_card';
 
 function Form(){
+  const [subject, setSubject] =React.useState("")
+
+  const submit = function(){
+    alert("Your message '" + subject + "' is send")
+    setSubject("")
+  }
   return(
     <>
       <div className='form_card'>
@@ -17,6 +23,9 @@ function Form(){
           <div className='submenudropdown'>About</div>
         </div>
         <div className='information_card'>
+          <div style={{backgroundColor:"#eae7e8"}}>
+            <img src="images/profile_background.png" style={{width:"100%"}}></img>
+          </div>
           <div style={{backgroundColor:"#eae7e8", padding:"15px 1px"}}>
             <div className='hsplit ' style={{padding:"4px 30px"}}>
               <div className='person_info_left'>Name</div>
@@ -28,7 +37,7 @@ function Form(){
             </div>
             <div className='hsplit ' style={{padding:"4px 30px"}}>
               <div className='person_info_left'>Phone</div>
-              <div className='person_info_right'>+856774555</div>
+              <div className='person_info_right'>+8567745555</div>
             </div>
           </div>
           <div className='massage_card' style={{}}>
@@ -40,7 +49,7 @@ function Form(){
                 <div className="input_name"
                 >Subject</div>
                 <div>
-                  <input className="input_text" type="text" name="name" />
+                  <input className="input_text" type="text" name="name" value={subject} onChange={(e) => setSubject(e.target.value)} />
                 </div>
               </div>
             </div>
@@ -54,14 +63,16 @@ function Form(){
               </div>
             </div>
             <div style={{textAlign:"center", padding:"15px 35px"}} >
-              <button className='sendbutton'>Send</button>
+              <button className='sendbutton' onClick={submit}>Send</button>
             </div>     
           </div>
           <div>
             <div style={{textAlign:"center", fontSize:"20px", fontWeight:"600", color:"#333", letterSpacing:"1px", padding:"20px 1px",backgroundColor:"#eae7e8"}}>
               Or meet me at the office
             </div>
-            <div><img src="images/image6.jpg" style={{width:"100%", height:"50%"}}/></div>
+            <div>
+              <img src="/images/map.png" style={{width:"100%", height:"50%"}}/>
+            </div>
             
             <div className='location'>
               <div style={{width:"150px", marginLeft:"35px"}}>
@@ -77,9 +88,136 @@ function Form(){
 }
 
 
+function Footer(){
+  return (
+    <>
+      <div style={{marginTop:"40px", textAlign:"center", backgroundColor:"#24373e", }}>
+        <div className='hsplit' style={{padding:"25px 1px"}}>
+          <div className='bottom_content col-lg-4 col-md-4 col-sm-4 col-xs-4'>
+            <h3 style={{color:"#ccc"}}>About Us</h3>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Automotive
+              </a>
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Wholesale
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Wholesale
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+              Rental
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+               Lagal
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Manufacturing
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Developers
+              </a> 
+            </div>
+          </div>
+          <div className='bottom_content col-lg-4 col-md-4 col-sm-4 col-xs-4'>
+            <h3 style={{color:"#ccc"}}>Lagal</h3>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Automotive
+              </a>
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Wholesale
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Wholesale
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+              Rental
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+              Manufacturing
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Manufacturing
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Developers
+              </a> 
+            </div>
+          </div>
+          <div className='bottom_content col-lg-4 col-md-4 col-sm-4 col-xs-4'>
+            <h3 style={{color:"#ccc"}}>Developers</h3>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Automotive
+              </a>
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Wholesale
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Wholesale
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+              Rental
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+              Manufacturing
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none"  }}>
+                Manufacturing
+              </a> 
+            </div>
+            <div className='bottom_content_div'>
+              <a href='' style={{textDecoration: "none" }}>
+                Developers
+              </a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
 
 function Home(){
-  var l =[1,2,3,4,5]
+  const related_articles =["images/related_articles1.png", "images/related_articles1.png"
+  , "images/related_articles1.png" , "images/related_articles1.png"
+  , "images/related_articles1.png"]
+
     return (
         <>
           <Header/>
@@ -108,50 +246,15 @@ function Home(){
             </div>
             
             <div className='hsplit'>  
-              {l.map ((x)=>(
+              {related_articles.map ((image)=>(
                 <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" >
-                <RepeatCard/>
+                <RepeatCard image={image} />
               </div>
               ))}
             </div>
           </div>
-          <div style={{marginTop:"40px", textAlign:"center", backgroundColor:"#24373e", }}>
-            <div className='hsplit' style={{padding:"25px 1px"}}>
-              <div className='bottom_content col-lg-4 col-md-4 col-sm-4 col-xs-4'>
-                <h3 style={{color:"#ccc"}}>About Us</h3>
-                <div className='bottom_content_div'>Automotive</div>
-                <div className='bottom_content_div'>Wholesale</div>
-                <div className='bottom_content_div'>Manufacturing</div>
-                <div className='bottom_content_div'>Building</div>
-                <div className='bottom_content_div'>Developers</div>
-                <div className='bottom_content_div'>Rental</div>
-                <div className='bottom_content_div'>Developers</div>
-                <div className='bottom_content_div'>Lagal</div>
-              </div>
-              <div className='bottom_content col-lg-4 col-md-4 col-sm-4 col-xs-4'>
-                <h3 style={{color:"#ccc"}}>Lagal</h3>
-                <div className='bottom_content_div'>Automotive</div>
-                <div className='bottom_content_div'>Wholesale</div>
-                <div className='bottom_content_div'>Manufacturing</div>
-                <div className='bottom_content_div'>Building</div>
-                <div className='bottom_content_div'>Developers</div>
-                <div className='bottom_content_div'>Rental</div>
-                <div className='bottom_content_div'>Developers</div>
-                <div className='bottom_content_div'>Lagal</div>
-              </div>
-              <div className='bottom_content col-lg-4 col-md-4 col-sm-4 col-xs-4'>
-                <h3 style={{color:"#ccc"}}>Developers</h3>
-                <div className='bottom_content_div'>Automotive</div>
-                <div className='bottom_content_div'>Wholesale</div>
-                <div className='bottom_content_div'>Manufacturing</div>
-                <div className='bottom_content_div'>Building</div>
-                <div className='bottom_content_div'>Developers</div>
-                <div className='bottom_content_div'>Rental</div>
-                <div className='bottom_content_div'>Developers</div>
-                <div className='bottom_content_div'>Lagal</div>
-              </div>
-            </div>
-          </div>
+          <Footer/>
+
           
         </>
     );
