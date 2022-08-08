@@ -71,7 +71,7 @@ function Form(){
               Or meet me at the office
             </div>
             <div>
-              <img src="/images/map.png" style={{width:"100%", height:"50%"}}/>
+              <img src="images/map.png" style={{width:"100%", height:"50%"}}/>
             </div>
             
             <div className='location'>
