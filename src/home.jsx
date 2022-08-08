@@ -12,7 +12,7 @@ function Form(){
         <div className='submenu_dropdown_card'>
           <div style={{textAlign:"center", fontSize:"20px", fontWeight:"600", color:"#333", letterSpacing:"1px", padding:"10px 1px"}}>Submenu</div> 
           <div className='submenudropdown'>Home</div>
-          <div className='submenudropdown'>Examles</div>
+          <div className='submenudropdown' style={{backgroundColor:"#00dfcf",color:"#fff"}}>Examles</div>
           <div className='submenudropdown'>Contact</div>
           <div className='submenudropdown'>About</div>
         </div>
