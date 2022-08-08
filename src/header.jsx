@@ -32,9 +32,7 @@ export function Header() {
               <div className="show-md hide-xs show-sm heading ">
                 BIBENDUM 
               </div>
-              <div className="show-md hide-xs show-sm heading">
-                MEGNA
-              </div>
+             
               <div className="hide-lg hide-md show-xs show-sm" style={{paddingTop: '6px', cursor:'pointer'}}>
                 <div className="menu" onClick={menuOpenClose}>
                   <span className="material-icons" style={{fontWeight: 600}}>
